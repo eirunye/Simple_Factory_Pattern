@@ -17,8 +17,8 @@ public class Test {
         System.out.println("江南店完成一单");
         System.out.println("==============================\n");
 
-        MealStore shenZhenMealStore = new GuangDongMealStore();
-        shenZhenMealStore.submitOrderMeal("roastDuck");
+        MealStore guangDongMealStore = new GuangDongMealStore();
+        guangDongMealStore.submitOrderMeal("roastDuck");
 
         System.out.println("广东店完成一单");
     }
