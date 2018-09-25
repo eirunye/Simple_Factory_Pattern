@@ -20,6 +20,6 @@ public class Test {
         MealStore shenZhenMealStore = new GuangDongMealStore();
         shenZhenMealStore.submitOrderMeal("roastDuck");
 
-        System.out.println("深圳店完成一单");
+        System.out.println("广东店完成一单");
     }
 }
