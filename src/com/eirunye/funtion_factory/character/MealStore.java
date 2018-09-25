@@ -3,7 +3,7 @@ package com.eirunye.funtion_factory.character;
 /**
  * Author Eirunye
  * Created by on 2018/9/18.
- * Describe 抽象工厂父类 美食总店
+ * Describe 抽象工厂基类 美食总店
  */
 public abstract class MealStore {
 

@@ -55,6 +55,7 @@ public abstract class Meal {
         return material;
     }
 
+
     public void setMaterial(String material) {
         this.material = material;
     }
