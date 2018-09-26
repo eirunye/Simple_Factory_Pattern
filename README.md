@@ -22,6 +22,7 @@
 <div align=center>
 <img src="https://upload-images.jianshu.io/upload_images/3012005-407ecb6ca3265939.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600">
 </div>
+
 1.创建一个美食店，`MealStore.class`
 ```JAVA
 
@@ -170,7 +171,8 @@ Process finished with exit code 0
 
 我们通过静态工厂方法的方式实现了该功能，但是，是否有更好的封装方式呢？接下来我们来分析一下吧。本例类图关系
 
-<div align=center><img src="https://upload-images.jianshu.io/upload_images/3012005-e55e00c647bcdb6d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600"><div/>
+<div align=center><img src="https://upload-images.jianshu.io/upload_images/3012005-e55e00c647bcdb6d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600">
+<div/>
 
 1.现在我们将`MealStore.class`,修改为抽象类，并且将生产商品的方法也修改为抽象方法，我们这样做的目的，为什么呢？
 我们这样做是让各个分店子类来实现商品的生产，扩展性更高，封装性更加完善，而该抽象类并不知道是哪个子类来完成商品的创建，达到了耦合。代码如下:
