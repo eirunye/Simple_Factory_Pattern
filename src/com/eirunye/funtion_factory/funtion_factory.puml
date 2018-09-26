@@ -1,0 +1,42 @@
+@startuml
+
+abstract class MealStore{
+
++ Meal submitOrderMeal(String type)
+# Meal createMeal(String type)
+}
+abstract class Meal{
+__ public __
++ List mealInfo = new ArrayList()
++ mealPreparation()
++ bake()
++ getMeal()
++ send()
+}
+class CrayfishMeal{
+__ public __
+ + CrayfishMeal()
+ + bake()
+}
+
+class RoastDuckMeal{
+__ public __
++ RoastDuckMeal()
+}
+
+class GuangDongMealStore{
+# Meal createMeal(String type)
+}
+class JiangNanMealStore{
+# Meal createMeal(String type)
+}
+
+Meal <|-- CrayfishMeal
+Meal <|-- RoastDuckMeal
+
+MealStore --> Meal
+
+MealStore <|-- GuangDongMealStore
+MealStore <|-- JiangNanMealStore
+
+@enduml

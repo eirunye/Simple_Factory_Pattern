@@ -1,0 +1,38 @@
+@startuml
+
+abstract class Meal{
+__ public __
++ List mealInfo = new ArrayList()
++ mealPreparation()
++ bake()
++ getMeal()
++ send()
+}
+class MealStore{
+__ public __
++ Meal submitOrderMeal(String type)
+}
+
+class SimpleMealsFactory{
+__ public __
++ Meal createMeal(String type)
+}
+
+class CrayfishMeal{
+__ public __
++ CrayfishMeal()
+}
+class RoastChicken{
+__ public __
++ RoastChicken()
+}
+
+Meal <|-- CrayfishMeal
+Meal <|-- RoastChicken
+
+SimpleMealsFactory --> MealStore
+
+Meal -->MealStore
+
+
+@enduml
