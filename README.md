@@ -20,7 +20,7 @@
 如何实现呢？我们先来看看本例的类图
 
 <div align=center>
-![static_factory.png](https://upload-images.jianshu.io/upload_images/3012005-407ecb6ca3265939.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)
+<img src="https://upload-images.jianshu.io/upload_images/3012005-407ecb6ca3265939.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600">
 </div>
 1.创建一个美食店，`MealStore.class`
 ```JAVA
@@ -337,8 +337,11 @@ Process finished with exit code 0
 ```
 # 下载
 [**本篇案例代码--码云**](https://gitee.com/eirunye/Simple_Factory_Pattern)
+
 [**本篇案例代码--GitHub**](https://github.com/eirunye/Simple_Factory_Pattern)
+
 [**设计模式系列--码云**](https://gitee.com/eirunye/Eirunye_DesignPatterns_Notes)
+
 [**设计模式系列--GitHub**](https://github.com/eirunye/Eirunye_DesignPatterns_Notes)
 # 总结
 我们通过简单的例子了解了简单工厂模式的开发案例，其实，简单工厂并不是我们常说的23中设计模式，他只是我们常用的一种编程习惯罢了，抽象工厂，才是我们常用的设计模式，接下来我们会讲解到抽象工厂模式。
